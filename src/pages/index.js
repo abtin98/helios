@@ -1,12 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-  <div>
-    <Header />
+  <Layout>
     <h1>
       Abtin Ameri
     </h1>
@@ -26,7 +25,7 @@ export default function Home() {
       <p>
         Former Vice President Academic of the Engineering Undergraduate Society
       </p>
-    </h2>
-    <Footer />
-  </div> )
+    </h2>    
+  </Layout> 
+  )
 }
