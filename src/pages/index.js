@@ -1,8 +1,12 @@
 import React from "react"
 
+import Footer from "../components/footer"
+import Header from "../components/header"
+
 export default function Home() {
   return (
   <div>
+    <Header />
     <h1>
       Abtin Ameri
     </h1>
@@ -22,8 +26,7 @@ export default function Home() {
       <p>
         Former Vice President Academic of the Engineering Undergraduate Society
       </p>
-      
-
     </h2>
+    <Footer />
   </div> )
 }
