@@ -1,32 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import headerStyles from "./header.module.scss"
+
 const Header = () =>
 {
     return (
-        <header>
+        <header className={headerStyles.header}>
+            <h1>
+                <Link className={headerStyles.title} to="/">
+                    Abtin Ameri
+                </Link>
+            </h1>
             <nav>
-                <ul>
+                <ul className={headerStyles.navList} >
                     <li>
-                        <Link to="/"> Home </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/"> Home </Link>
                     </li>
                     <li>
-                        <Link to="/about"> About Me </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about"> About Me </Link>
                     </li>
                     <li>
-                        <Link to="/contact"> Contact </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact"> Contact </Link>
                     </li>
                     <li>
-                        <Link to="/research"> Research </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/research"> Research </Link>
                     </li>
                     <li>
-                        <Link to="/publications"> Publications </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/publications"> Publications </Link>
                     </li>
                     <li>
-                        <Link to="/blog"> Blog </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog"> Blog </Link>
                     </li>
                     <li>
-                        <Link to="/photography"> Photography </Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/photography"> Photography </Link>
                     </li>
                 </ul>
             </nav>
