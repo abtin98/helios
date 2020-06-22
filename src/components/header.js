@@ -7,7 +7,12 @@ const Header = () =>
 {
     return (
         <header className={headerStyles.header}>
-            <h1>
+            <h1
+              data-sal="fade"
+              data-sal-duration="2000"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-back"
+            >
                 <Link className={headerStyles.title} to="/">
                     Abtin Ameri
                 </Link>
