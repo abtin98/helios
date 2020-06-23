@@ -6,9 +6,6 @@ import Layout from "../components/layout"
 export default function Home() {
   return (
   <Layout>
-    <h1>
-      Abtin Ameri
-    </h1>
     <h2>
       <p>
         <a href="https://www.mit.edu">MIT</a> PhD Student
@@ -25,7 +22,7 @@ export default function Home() {
       <p>
         Former Vice President Academic of the Engineering Undergraduate Society
       </p>
-    </h2>    
-  </Layout> 
+    </h2> 
+  </Layout>
   )
 }

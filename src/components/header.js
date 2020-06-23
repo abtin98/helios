@@ -2,21 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
+import mitCampus from "../images/mit-campus.jpg"
+
 
 const Header = () =>
 {
     return (
         <header className={headerStyles.header}>
+            <img src={mitCampus} alt="MIT Campus" />
             <h1
-              data-sal="fade"
-              data-sal-duration="2000"
-              data-sal-delay="300"
-              data-sal-easing="ease-out-back"
+            className={headerStyles.centered}
+            data-sal="fade"
+            data-sal-duration="2000"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back"
             >
                 <Link className={headerStyles.title} to="/">
                     Abtin Ameri
                 </Link>
             </h1>
+            
             <nav>
                 <ul className={headerStyles.navList} >
                     <li>
