@@ -1,0 +1,63 @@
+.header
+{
+    padding: 1rem 0 3rem;
+
+}
+
+.title
+{
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.nav-item 
+{
+    color: gray;
+    text-decoration: underline;
+    transition:0.3s;
+    font-size: 0.9 rem;
+    margin-right: 1.3rem;
+}
+
+.nav-list
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item:hover
+{
+    color: #34e9da;
+    transition:0.5s;
+}
+
+.active-nav-item
+{
+    color: #1494c2;
+}
+
+.btn
+{
+  background-color: white;
+  border-radius: 50px;
+  border: solid;
+  border-color: rgb(32, 155, 236);
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.btn:hover 
+{
+    color: white;
+    background-color: rgb(80, 118, 241);
+    cursor: pointer;
+    transition: 0.5s;
+}
+

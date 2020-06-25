@@ -3,9 +3,26 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
+import indexStyles from "../styles/index.module.scss"
+
+import mitCampus from "../images/mit-campus.jpg"
+
 export default function Home() {
   return (
   <Layout>
+    <div className={indexStyles.container}>
+      <img src={mitCampus} alt="MIT Campus" width="100%" />
+      <div className={indexStyles.centered}>
+        <h1
+        data-sal="fade"
+        data-sal-duration="2000"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-back"
+        >
+          Abtin Ameri
+        </h1>
+      </div>
+    </div>
     <h2>
       <p>
         <a href="https://www.mit.edu">MIT</a> PhD Student

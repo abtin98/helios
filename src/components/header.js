@@ -1,27 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import headerStyles from "./header.module.scss"
-import mitCampus from "../images/mit-campus.jpg"
+import headerStyles from "../styles/header.module.scss"
 
+import myCV from "../files/CV_Abtin_Ameri.pdf"
 
 const Header = () =>
 {
     return (
-        <header className={headerStyles.header}>
-            <img src={mitCampus} alt="MIT Campus" />
-            <h1
-            className={headerStyles.centered}
-            data-sal="fade"
-            data-sal-duration="2000"
-            data-sal-delay="300"
-            data-sal-easing="ease-out-back"
-            >
-                <Link className={headerStyles.title} to="/">
-                    Abtin Ameri
-                </Link>
-            </h1>
-            
+        <header className={headerStyles.header}>            
             <nav>
                 <ul className={headerStyles.navList} >
                     <li>
@@ -44,6 +31,9 @@ const Header = () =>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/photography"> Photography </Link>
+                    </li>
+                    <li>
+                        <a href={myCV} download="CV_Abtin_Ameri.pdf"> <button className={headerStyles.btn}>  Download CV </button> </a> 
                     </li>
                 </ul>
             </nav>
